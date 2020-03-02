@@ -1,0 +1,14 @@
+int main(){
+    int a, i, j, mul = 1 , sum = 0;
+    scanf("%d",&a);
+    for( j = a ; j > 0 ; j-- ){
+    for( i = 1 ; i <= a ; i++){
+        mul *= i;
+    }
+    a--;
+    sum += mul;
+    mul = 1;
+    }
+    printf("%d",sum);
+    return 0;
+}
