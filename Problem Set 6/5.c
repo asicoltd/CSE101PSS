@@ -1,16 +1,17 @@
 int main(){
-    int a, i, j, k=1, l, m;
+    int a, i, j, k, l = 1;
     scanf("%d",&a);
-        i = a - k;
+    for( i = a ; i > 0 ; i-- ){
+        for( j = 0 ; j < a ; j++ ){
+            printf(" ");
+        }
 
-    for( k = 1 ; k <= a; k++){
-        for( l = 0 ; l < i; l++)
-        printf(" ");
-        for( m = 0 ; m < j; m++){
+        for( k = 0 ; k < l ; k++){
             printf("*");
         }
-        printf("\n");
-        j+=2;
+            printf("\n");
+            l+=2;
+            a--;
     }
     return 0;
 }
