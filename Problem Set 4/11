@@ -1,0 +1,25 @@
+int main(){
+    int b, i, j,l=0;
+    printf("Array Size: ");
+    scanf("%d",&b);
+    int a[b];
+    printf("Input Array: ");
+    for( i = 0; i < b; i++){
+        scanf("%d",&a[i]);
+        if( a[i] > 0 ) l++;
+    }
+    j = 0;
+    int c[l];
+    for( i = 0; i < b; i++){
+    if( a[i] > 0 ){
+    c[j] = a[i];
+    j++;
+    }
+    }
+    printf("New Array Size: %d\nNew Array:",l);
+    for( i = 0; i < l; i++){
+        printf(" %d",c[i]);
+    }
+
+    return 0 ;
+}
