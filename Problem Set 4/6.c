@@ -11,12 +11,11 @@ int main(){
             for( j = i+1 ; j < b; j++){
                 if( a[i] == a[j] ){
                     flag = 1;
-		   a[i]=c;
-		    break;
+                    c = j;
+                    break;
                 }
-		if( flag = 1 ){
-		break;
-            }
+                if( flag == 1)break;
+    }
     }
     printf("%d",c);
     return 0 ;
