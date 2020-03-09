@@ -1,5 +1,5 @@
 int main(){
-    int b, d, i, j = 1;
+    int b, d, i, j = 1,flag=0;
     printf("Array Size: ");
     scanf("%d",&b);
     int a[b];
@@ -15,11 +15,18 @@ int main(){
         scanf("%d",&c[i]);
     }
 
-    if( j == -1){
-        printf("Equal\n");
+    if( b == d ){
+	for(i=0;i<b;i++){
+	if(a[i]!=c[i]){
+	flag = 1;
+	break;}
+	}
+        
     }
-    else if(j == 1){
+    else{
         printf("Not Equal\n");
     }
+	if(flag == 1)printf("Not Equal");
+	else printf("Not Equal");
     return 0;
 }
